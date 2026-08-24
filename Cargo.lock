@@ -1420,6 +1420,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "ui-events-windows"
+version = "0.3.0"
+dependencies = [
+ "dpi",
+ "ui-events",
+ "ui-text-input",
+]
+
+[[package]]
 name = "ui-events-winit"
 version = "0.3.0"
 dependencies = [

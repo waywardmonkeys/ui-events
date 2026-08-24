@@ -20,6 +20,7 @@ env:
     -p ui-events-uikit
     -p ui-events-wayland
     -p ui-events-web
+    -p ui-events-windows
     -p ui-events-winit
     -p ui-events-x11
     -p ui-events-xkb
@@ -34,6 +35,7 @@ env:
     -p ui-events-appkit
     -p ui-events-uikit
     -p ui-events-wayland
+    -p ui-events-windows
     -p ui-events-x11
     -p ui-events-xkb
     -p ui-input-state
@@ -149,6 +151,9 @@ jobs:
 
       - name: cargo rdme (ui-events-wayland)
         run: cargo rdme --workspace-project=ui-events-wayland --heading-base-level=0 --check
+
+      - name: cargo rdme (ui-events-windows)
+        run: cargo rdme --workspace-project=ui-events-windows --heading-base-level=0 --check
 
       - name: cargo rdme (ui-events-web)
         run: cargo rdme --workspace-project=ui-events-web --heading-base-level=0 --check
